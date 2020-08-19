@@ -3,8 +3,8 @@ module.exports = {
   multiply,
 };
 
-function add(a, b = 0) {
-  return a + b;
+function add(...nums) {
+  return nums.reduce((acc, current) => acc + current);
 }
 
 function multiply(a, b) {
