@@ -53,3 +53,19 @@ describe("multiply()", () => {
     expect(multiply(2, 1)).toBe(2);
   });
 });
+
+describe("matchers playgroud", () => {
+  it("tests full equality", () => {
+    expect({}).toStrictEqual({});
+    expect([1, 2]).toEqual([1, 2]);
+  });
+
+  it("should handle decimals", () => {
+    expect(0.2 + 0.1).toBeCloseTo(0.3);
+  });
+
+  it("should see how many elements exist inside an array", () => {
+    expect([1, 2, 3].length).toBe(3);
+    expect([1, 2, 3]).toHaveLength(3);
+  });
+});
