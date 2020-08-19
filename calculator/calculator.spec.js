@@ -36,6 +36,9 @@ describe("add()", () => {
   //     expect(add(-1)).toBe(-1);
   //   });
 
+  //it.only --> runs only this test
+  //it.skip --> skips this test
+
   //refactor the testing since this test includes the previous testing parameters
   it("should return the sum of a comma separated list of numbers", () => {
     expect(add(1)).toBe(1);
